@@ -1,0 +1,11 @@
+/* Elementos en bloque */
+.block-element {
+    background-color: chocolate;
+    /* display: inline;    Convierte un elemnto en bloque a un elemento en linea */
+}
+
+/* Elementos en linea */
+.line-element {
+    background-color: blue;
+    /* display: block;    Convierte un elemento en linea a un elemento en bloque */
+}
