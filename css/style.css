@@ -1,11 +1,47 @@
-/* Elementos en bloque */
-.block-element {
-    background-color: chocolate;
-    /* display: inline;    Convierte un elemnto en bloque a un elemento en linea */
+.header, .footer {
+    background-color: darksalmon;
 }
 
-/* Elementos en linea */
-.line-element {
-    background-color: blue;
-    /* display: block;    Convierte un elemento en linea a un elemento en bloque */
+.main {
+    background-color: lightgreen;
+}
+
+/* Mobile First: Ataca primero los dispositivos pequenios */
+.container {
+    max-width: 100%;
+    /* padding: 0 20px; */
+    box-sizing: border-box;
+    margin: 0 auto;
+    border: 1px dotted blue;
+}
+
+/* Los dispositivos mas grandes basados en este enfoque se deben atacar dentro de media queries */
+@media screen and ( min-width: 567px ) {
+    .container {
+        max-width: 540px;
+    }
+}
+
+@media screen and ( min-width: 768px ) {
+    .container {
+        max-width: 720px;
+    }
+}
+
+@media screen and ( min-width: 992px ) {
+    .container {
+        max-width: 960px;
+    }
+}
+
+@media screen and ( min-width: 1200px ) {
+    .container {
+        max-width: 1140px;
+    }
+}
+
+@media screen and ( min-width: 1400px ) {
+    .container {
+        max-width: 1320px;
+    }
 }
